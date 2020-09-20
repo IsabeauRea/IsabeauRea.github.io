@@ -143,3 +143,7 @@ nav a, nav span {
   display: flex;
   flex-direction: row;
 }
+
+.box {
+  width: 400px;
+}
