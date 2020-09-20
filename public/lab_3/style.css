@@ -128,7 +128,7 @@ nav a, nav span {
 
 .aside a {
   float: left;
-  display: flex;
+  display: block;
   flex-basis: 50%;
 }
 
