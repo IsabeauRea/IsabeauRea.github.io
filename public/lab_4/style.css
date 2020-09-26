@@ -20,8 +20,8 @@ html, body {
   /* || typography */
   
   h1, h2, h3 {
-    font-family: 'Comfortaa', cursive;
-    color: #2a2a2a;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
   }
   
   p, input, li {
@@ -57,7 +57,6 @@ html, body {
     margin-bottom: 10px;
     display: flex;
     flex-flow: row wrap;
-    color: white;
   }
   
   body > * {
@@ -140,4 +139,8 @@ html, body {
   .footer {
     margin-top: 10px;
     background: rgba(0,255,0,0.5);
+  }
+
+  ul.no-bullets {
+    list-style-type: none;
   }
