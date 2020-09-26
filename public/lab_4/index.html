@@ -13,7 +13,7 @@
     </div>
     <div class=".main">
         <form action="/api" method="post">
-            <ul class=".flex-outer">
+            <nav ul class=".flex-outer">
                 <li>
                     <label for="first-name">First Name</label>
                     <input type="text" id="first-name" maxlength="140">
@@ -34,10 +34,10 @@
                     <label for="message">Message</label>
                     <textarea rows="5" cols="33" id="message" placeholder="This is some default message text."></textarea>
                 </li>
-            </ul>
+            </nav>
             <li>
                 <p>Age</p>
-                <ul class=".flex-inner">
+                <nav ul class=".flex-inner">
                     <li>
                     <input type="checkbox" name="18-35" id="eighteen-to-thirtyfive">
                     <label for="eighteen-to-thirtyfive">18-35</label>
@@ -50,7 +50,7 @@
                         <input type="checkbox" id="fifty-to-sixtyfive">
                         <label for="fifty-to-sixtyfive">50-65</label>
                     </li> 
-                </ul>
+                </nav>
             </li>
             <li>
                 <button type="submit">SUBMIT</button>
