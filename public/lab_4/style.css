@@ -100,10 +100,6 @@ html, body {
     flex: 1;
     padding-bottom: 15px;
   }
-  
-  .textarea-container {
-    padding-top: 15px;
-  }
 
   nav a, nav span {
     display: inline-block;
