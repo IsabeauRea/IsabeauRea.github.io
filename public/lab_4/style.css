@@ -65,7 +65,7 @@ html, body {
   }
   
   .main, .header, nav, .article, .aside, footer, section {
-    background-color: rgba(0,255,0,0.5);
+    background-color: #FEC5E5;
     padding: 1%;
   }
   
