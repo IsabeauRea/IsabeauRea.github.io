@@ -27,6 +27,7 @@ html, body {
   p, input, li {
     font-family: 'Roboto Condensed', sans-serif;
     color: #2a2a2a;
+    flex-direction: row;
   }
   
   h1 {
