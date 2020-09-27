@@ -162,11 +162,12 @@ html, body {
     flex-direction: column;
   }
   
-  button {
-    background-color: white;
-    border: 2px solid #ECD4FF;
-    display: inline-block;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 18px;
-    padding: 5px 5px;
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px #ECD4FF;
   }
