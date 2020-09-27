@@ -114,6 +114,7 @@ html, body {
   }
   
   /* || main layout */
+
   
   .main {
     display: flex;
@@ -154,6 +155,12 @@ html, body {
     border-radius: 2px #ECD4FF;
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .flex-outer li,
