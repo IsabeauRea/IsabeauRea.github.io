@@ -157,12 +157,6 @@ html, body {
     font-size: 18px;
   }
 
-  .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
   .flex-outer li,
   .flex-inner {
     display: flex;
@@ -175,6 +169,11 @@ html, body {
   .flex-outer li p {
     flex: 1 0 120px;
     max-width: 220px;
+  }
+
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
   }
   
   .flex-outer > li > label + *,
