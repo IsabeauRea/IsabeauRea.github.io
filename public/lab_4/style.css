@@ -173,3 +173,10 @@ html, body {
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
   }
+
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
