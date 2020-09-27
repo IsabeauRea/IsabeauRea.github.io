@@ -165,9 +165,11 @@ html, body {
   .flex-outer li button {
     margin-left: auto;
     padding: 8px 16px;
-    background: white;
+    background-color: white;
     color: black;
     text-transform: uppercase;
     letter-spacing: .09em;
     border-radius: 2px #ECD4FF;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
   }
