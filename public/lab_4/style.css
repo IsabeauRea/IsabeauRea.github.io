@@ -97,6 +97,7 @@ html, body {
     display: inline;
     flex: 1;
     padding-bottom: 15px;
+    list-style-type: none;
   }
 
   nav a, nav span {
