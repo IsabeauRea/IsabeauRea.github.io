@@ -96,7 +96,7 @@ html, body {
   .flex-outer li p {
     flex: 8px;
     max-width: 100px;
-    padding-right: 100px
+    padding-right: 300px
   }
 
   .flex-inner {
