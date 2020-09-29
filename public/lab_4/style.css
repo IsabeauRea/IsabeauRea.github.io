@@ -162,12 +162,12 @@ html, body {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;   
-    padding-right: 100px 
+    padding-right: 50px 
   }
 
   .flex-outer > li > label,
   .flex-outer li p {
-    flex: 1 0 120px;
+    flex: 8px;
     max-width: 220px;
   }
 
