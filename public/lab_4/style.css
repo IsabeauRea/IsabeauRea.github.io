@@ -47,7 +47,7 @@ body {
 }
 
 .flex-outer > li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .flex-outer li label,
