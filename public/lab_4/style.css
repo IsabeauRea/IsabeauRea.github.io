@@ -43,6 +43,23 @@ body {
   align-items: center;
 }
 
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 100;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
  /* TYPOGRAPHY */
   
  p, input, li {
@@ -66,7 +83,7 @@ p, li {
   list-style-type: none;
 }
 
- /* || header layout */
+ /* HEADER LAYOUT */
   
 .header {
   margin-bottom: 10px;
@@ -89,23 +106,9 @@ h1 {
   text-transform: uppercase;
 }
 
+/* MAIN LAYOUT */
 
-.flex-inner {
-  padding: 0 8px;
-  justify-content: space-between;  
-}
 
-.flex-outer > li:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.flex-outer li label,
-.flex-outer li p {
-  padding: 8px;
-  font-weight: 100;
-  letter-spacing: .09em;
-  text-transform: uppercase;
-}
 
 .flex-outer > li > label,
 .flex-outer li p {
