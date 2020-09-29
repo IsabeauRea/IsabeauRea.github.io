@@ -109,14 +109,10 @@ html, body {
     
   }
 
-  .flex-outer li input:not([type='checkbox']),
-  .flex-outer li textarea {
-  padding: 15px;
-  border: none;
-  }
+
 
   .flex-inner li {
-    width: 50px;
+    width: 100px;
 
   }
 
