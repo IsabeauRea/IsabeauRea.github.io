@@ -12,7 +12,7 @@ html, body {
   
   body {
     width: 70%;
-    min-width: 800px;
+    min-width: 100px;
     margin: 0 auto;
     background-color: #ECD4FF;
   }
@@ -83,17 +83,11 @@ html, body {
     font-size: 18px;
   }
 
+
   .flex-outer > li > label,
   .flex-outer li p {
     flex: 1 0 50px;
     max-width: 200px;
-  }
-
-  
-
-  .flex-inner {
-    padding: 0 8px;
-    justify-content: space-between;  
   }
   
   .flex-outer li,
@@ -103,6 +97,11 @@ html, body {
     align-items: center;
     flex-direction: row;   
     padding-right: 150px 
+  }
+
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
   }
 
   .flex-outer > li > label + *,
