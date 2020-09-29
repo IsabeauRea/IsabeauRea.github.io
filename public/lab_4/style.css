@@ -70,10 +70,6 @@ html, body {
   }
   
   /* || main layout */
-
-  .article, section {
-    flex: 4;
-  }
   
   button {
     margin-left: auto;
