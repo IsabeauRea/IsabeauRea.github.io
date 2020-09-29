@@ -89,7 +89,7 @@ html, body {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;   
-    padding-right: 50px 
+    padding-right: 100px 
   }
 
   .flex-outer > li > label,
@@ -105,7 +105,8 @@ html, body {
   
   .flex-outer > li > label + *,
   .flex-inner {
-    flex: 1 0 220px;
+    flex: 50px;
+
   }
 
   .flex-inner li {
