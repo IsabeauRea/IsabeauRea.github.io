@@ -83,11 +83,17 @@ html, body {
     font-size: 18px;
   }
 
-
   .flex-outer > li > label,
   .flex-outer li p {
     flex: 1 0 50px;
     max-width: 200px;
+  }
+
+  
+
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
   }
   
   .flex-outer li,
@@ -97,11 +103,6 @@ html, body {
     align-items: center;
     flex-direction: row;   
     padding-right: 150px 
-  }
-
-  .flex-inner {
-    padding: 0 8px;
-    justify-content: space-between;  
   }
 
   .flex-outer > li > label + *,
