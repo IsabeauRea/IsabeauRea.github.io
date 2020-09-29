@@ -16,17 +16,13 @@ html, body {
     margin: 0 auto;
     background-color: #ECD4FF;
   }
-  
-  .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+
+  .flex-outer,
+  .flex-inner {
+  list-style-type: none;
+  padding: 0;
   }
-  
-  .container * {
-    box-sizing: border-box;
-  }
-  
+
   /* || typography */
   
   p, input, li {
