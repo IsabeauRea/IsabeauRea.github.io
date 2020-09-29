@@ -96,12 +96,15 @@ html, body {
   .flex-outer li p {
     flex: 8px;
     max-width: 100px;
-    padding-left: 300px
   }
 
   .flex-inner {
     padding: 0 8px;
     justify-content: space-between;  
+  }
+  
+  .flex-outer li p {
+    margin: 0;
   }
   
   .flex-outer > li > label + *,
