@@ -112,10 +112,6 @@ html, body {
 
 
   .flex-inner li {
-    width: 100px;
+    width: 80px;
 
-  }
-
-  .flex-inner {
-    justify-content: space-between;
   }
