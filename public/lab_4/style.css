@@ -161,7 +161,8 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex-direction: row;    
+    flex-direction: row;   
+    padding-right: 50px 
   }
 
   .flex-outer > li > label,
