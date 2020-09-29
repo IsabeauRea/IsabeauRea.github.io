@@ -47,13 +47,13 @@ body {
 }
 
 .flex-outer > li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .flex-outer li label,
 .flex-outer li p {
   padding: 8px;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: .09em;
   text-transform: uppercase;
 }
