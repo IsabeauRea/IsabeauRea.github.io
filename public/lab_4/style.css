@@ -1,7 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+
+}
+
 body {
-  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-  background: #3AAFAB;
-  color: #fff;
+  background: #ECD4FF;
   padding: 50px 0;
 }
 
