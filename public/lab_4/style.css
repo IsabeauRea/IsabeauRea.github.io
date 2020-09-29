@@ -95,7 +95,7 @@ html, body {
   .flex-outer > li > label,
   .flex-outer li p {
     flex: 8px;
-    max-width: 220px;
+    max-width: 20px;
   }
 
   .flex-inner {
