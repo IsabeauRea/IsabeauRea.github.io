@@ -105,8 +105,8 @@ html, body {
   
   .flex-outer > li > label + *,
   .flex-inner {
-    flex: 50px;
-
+    flex: 1 0 220px;
+    
   }
 
   .flex-inner li {
