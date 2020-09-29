@@ -12,9 +12,19 @@ html, body {
   
   body {
     width: 70%;
-    min-width: 100px;
+    min-width: 800px;
     margin: 0 auto;
     background-color: #ECD4FF;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container * {
+    box-sizing: border-box;
   }
   
   /* || typography */
