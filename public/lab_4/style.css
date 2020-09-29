@@ -82,53 +82,10 @@ html, body {
     padding-top: 20.15px;
   }
   
-  nav li {
-    display: inline;
-    flex: 1;
-    padding-bottom: 15px;
-    list-style-type: none;
-  }
-
-  nav a, nav span {
-    display: inline-block;
-    font-size: 2rem;
-    height: 3rem;
-    line-height: 1.7;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-  
-  }
-  
   /* || main layout */
 
-  
-  .main {
-  }
-  
   .article, section {
     flex: 4;
-  }
-  
-  .aside {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 2;
-  }
-  
-  .aside a {
-    display: flex;
-    flex-basis: 50%;
-  }
-  
-  .aside img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .footer {
-    margin-top: 10px;
-    background: rgba(0,255,0,0.5);
   }
   
   button {
