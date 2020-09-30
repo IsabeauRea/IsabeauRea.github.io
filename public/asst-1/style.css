@@ -11,6 +11,16 @@ h1 {
     font-family: 'Baloo Da 2', cursive;
 }
 
+.header {
+    color: #EDB73E;
+    background-color: #ED593E;
+    margin-bottom: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
 .header_image {
 
 }
@@ -34,4 +44,3 @@ h1 {
 .stats {
     font-family: 'Baloo Da 2', cursive;
 }
-
