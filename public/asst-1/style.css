@@ -4,7 +4,7 @@ body{
 
 header { 
     background-color: #F7AD40;
-    
+
 }
 
 h1 {
@@ -28,10 +28,10 @@ h1 {
 }
 
 .avatar_blurb {
-
+    
 }
 
 .stats {
-
+    font-family: 'Baloo Da 2', cursive;
 }
 
