@@ -32,7 +32,8 @@ h1 {
 }
 
 .avatar_image {
-
+    border: 1px solid #F77840;
+    border-radius: 4px;
 }
 
 .content_container {
@@ -40,9 +41,12 @@ h1 {
 }
 
 .avatar_blurb {
-    
+    display: inline-flex;
+    flex-flow: row wrap;
 }
 
 .stats {
+    display: inline-flex;
+    flex-flow: row wrap;
     font-family: 'Baloo Da 2', cursive;
 }
