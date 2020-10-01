@@ -68,9 +68,6 @@ header {
     font-family: sans-serif;
     flex: 1 2/3;
     max-width: 640px;
-}
-
-.statshead {
     font-family: 'Baloo Da 2', cursive;
 }
 
