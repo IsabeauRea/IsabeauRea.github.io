@@ -4,6 +4,9 @@ body{
 
 header { 
     background-color: #F7AD40;
+    display: flex;
+    align-items: center;
+    
 
 }
 
@@ -24,18 +27,18 @@ header {
     order: 2;
 }
 
-.wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
 .avatar_image {
     border: 1px solid #F77840;
     border-radius: 4px;
     max-width: 320px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .content_container {
