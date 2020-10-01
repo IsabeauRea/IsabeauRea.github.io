@@ -39,6 +39,17 @@ header {
     flex-wrap: wrap;
 }
 
+.avatar_blurb {
+    font-family: 'Baloo Da 2', cursive;
+    background-color: #ED593E;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    margin: 3px;
+}
+
 .wrapper {
     display: flex;
     flex-flow: row wrap;
@@ -53,14 +64,6 @@ header {
     /* align-items: flex-start; */
 }
 
-.avatar_blurb {
-    font-family: 'Baloo Da 2', cursive;
-    background-color: #ED593E;
-    display: inline-flex;
-    flex-flow: column wrap;
-    align-items: center;
-    max-width: 320px;
-}
 
 .stats {
     background-color: #ED593E;
