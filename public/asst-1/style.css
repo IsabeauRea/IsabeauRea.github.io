@@ -52,7 +52,7 @@ header {
 }
 
 .avatar_blurb {
-    font-family: sans-serif;
+    font-family: 'Baloo Da 2', cursive;
     background-color: #F7AD40;
     display: inline-flex;
     flex-flow: column wrap;
