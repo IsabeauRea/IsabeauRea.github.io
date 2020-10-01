@@ -65,6 +65,10 @@ header {
     background-color: #F7AD40;
     max-width: 640px;
     font-family: 'Baloo Da 2', cursive;
+    /*display: inline-flex;
+    flex-flow: column wrap;
+    font-family: sans-serif;
+    flex: 1 2/3;*/
 }
 
 @media (max-width: 1000px){
