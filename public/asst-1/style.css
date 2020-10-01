@@ -53,16 +53,15 @@ header {
 
 .avatar_blurb {
     font-family: 'Baloo Da 2', cursive;
-    background-color: #F7AD40;
+    background-color: #ED593E;
     display: inline-flex;
     flex-flow: column wrap;
     align-items: center;
-    flex: 1/3 1;
     max-width: 320px;
 }
 
 .stats {
-    background-color: #F7AD40;
+    background-color: #ED593E;
     max-width: 640px;
     font-family: 'Baloo Da 2', cursive;
     /*display: inline-flex;
