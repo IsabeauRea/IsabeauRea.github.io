@@ -7,11 +7,8 @@ header {
 
 }
 
-h1 {
-    font-family: 'Baloo Da 2', cursive;
-}
-
 .header {
+    font-family: 'Baloo Da 2', cursive;
     color: #EDB73E;
     background-color: #ED593E;
     margin-bottom: 15px;
@@ -45,6 +42,7 @@ h1 {
 }
 
 .avatar_blurb {
+    font-family: sans-serif;
     background-color: #F7AD40;
     display: inline-flex;
     flex-flow: column wrap;
@@ -57,9 +55,13 @@ h1 {
     background-color: #F7AD40;
     display: inline-flex;
     flex-flow: column wrap;
-    font-family: 'Baloo Da 2', cursive;
+    font-family: sans-serif;
     flex: 1 2/3;
     max-width: 640px;
+}
+
+.statshead {
+    font-family: 'Baloo Da 2', cursive;
 }
 
 @media (max-width: 1000px){
@@ -70,6 +72,7 @@ h1 {
     }
 
     .avatar_blurb {
+        font-family: sans-serif;
         background-color: #F7AD40;
         display: inline-flex;
         flex-flow: row wrap;
