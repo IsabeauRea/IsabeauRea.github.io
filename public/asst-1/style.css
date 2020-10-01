@@ -12,6 +12,7 @@ h1 {
 }
 
 .header {
+    width: 100%;
     color: #EDB73E;
     background-color: #ED593E;
     margin-bottom: 15px;
@@ -34,24 +35,28 @@ h1 {
 .avatar_image {
     border: 1px solid #F77840;
     border-radius: 4px;
+    max-width: 320px;
 }
 
 .content_container {
-    background-color: #F7AD40;
     max-width: 960px;
 }
 
 .avatar_blurb {
+    background-color: #F7AD40;
     display: inline-flex;
     flex-flow: column wrap;
     flex: 1/3 1;
+    max-width: 320px;
 }
 
 .stats {
+    background-color: #F7AD40;
     display: inline-flex;
     flex-flow: column wrap;
     font-family: 'Baloo Da 2', cursive;
     flex: 1 2/3;
+    max-width: 640px;
 }
 
 /*@media (max-width: 1000px)*/
