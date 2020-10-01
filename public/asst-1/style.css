@@ -31,14 +31,6 @@ header {
     height: auto;
 }
 
-.avatar_image {
-    border: 1px solid #E08B45;
-    border-radius: 4px;
-    max-width: 320px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .avatar_blurb {
     font-family: 'Baloo Da 2', cursive;
     background-color: #ED593E;
@@ -48,6 +40,14 @@ header {
     justify-content: center;
     max-width: 320px;
     margin: 3px;
+}
+
+.avatar_image {
+    border: 1px solid #E08B45;
+    border-radius: 4px;
+    max-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .wrapper {
