@@ -28,6 +28,7 @@ header {
 .header_image {
     order: 2;
     max-width: 10%;
+    height: auto;
 }
 
 .avatar_image {
