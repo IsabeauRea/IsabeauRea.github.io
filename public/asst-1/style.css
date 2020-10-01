@@ -26,8 +26,7 @@ h1 {
 }
 
 .wrapper {
-    background-color: #F7AD40;
-    display: flex;
+    display: inline-flex;
     flex-flow: row wrap;
     justify-content: center;
 }
@@ -38,11 +37,12 @@ h1 {
 }
 
 .content_container {
+    background-color: #F7AD40;
     max-width: 960px;
 }
 
 .avatar_blurb {
-    display: inline-flex;
+    display: flex;
     flex-flow: column wrap;
 }
 
