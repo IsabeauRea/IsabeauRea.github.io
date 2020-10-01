@@ -12,10 +12,11 @@ h1 {
 }
 
 .header {
-    width: 100%;
     color: #EDB73E;
     background-color: #ED593E;
     margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -40,6 +41,7 @@ h1 {
 
 .content_container {
     max-width: 960px;
+    align-items: flex-start;
 }
 
 .avatar_blurb {
