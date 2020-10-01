@@ -71,10 +71,10 @@ body{
     /* align-items: flex-start; */
 }
 
-
 .stats {
     background-color: #ED593E;
     max-width: 640px;
+    padding: 10px;
     font-family: 'Baloo Da 2', cursive;
     /*display: inline-flex;
     flex-flow: column wrap;
