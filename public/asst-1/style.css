@@ -22,10 +22,11 @@ h1 {
   }
 
 .header_image {
-
+    order: 2;
 }
 
 .wrapper {
+    background-color: #F7AD40;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
