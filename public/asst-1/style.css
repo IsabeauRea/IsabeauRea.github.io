@@ -43,11 +43,11 @@ h1 {
 
 .avatar_blurb {
     display: inline-flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 
 .stats {
-    display: inline-flex;
+    display: flex;
     flex-flow: row wrap;
     font-family: 'Baloo Da 2', cursive;
 }
