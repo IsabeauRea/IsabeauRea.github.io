@@ -2,7 +2,7 @@ body{
     background-color: #EDB73E;
 }
 
-header { 
+/*header { 
     background-color: #F7AD40;
     display: flex;
     align-items: center;
@@ -10,9 +10,16 @@ header {
     justify-content: space-between;
     margin-bottom: 20px;
 
-}
+}*/
 
 .header {
+    background-color: #F7AD40;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
     font-family: 'Baloo Da 2', cursive;
     color: #EDB73E;
     background-color: #ED593E;
