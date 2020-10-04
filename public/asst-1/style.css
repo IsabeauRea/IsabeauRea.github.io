@@ -110,6 +110,10 @@ body{
     flex: 1 2/3;*/
 }
 
+h3 {
+    font-style: italic;
+}
+
 @media (max-width: 1000px){
     .wrapper {
         display: flex;
