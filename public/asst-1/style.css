@@ -119,7 +119,6 @@ body{
 
     .avatar_blurb {
         font-family: sans-serif;
-        background-color: #FCD079;
         display: inline-flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
