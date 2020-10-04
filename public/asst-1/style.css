@@ -60,7 +60,6 @@ body{
 .avatar_blurb {
     display: flex;
     flex-wrap: wrap;
-    flex-flow: column wrap;
     max-width: 320px;
     justify-content: center;
 }
