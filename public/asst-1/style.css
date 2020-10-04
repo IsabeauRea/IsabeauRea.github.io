@@ -1,5 +1,5 @@
 body{
-    background-color: #EDB73E;
+    background-color: #FCAE79;
 }
 
 /*header { 
@@ -20,8 +20,8 @@ body{
     margin-bottom: 20px;
     padding: 15px;
     font-family: 'Baloo Da 2', cursive;
-    color: #EDB73E;
-    background-color: #ED593E;
+    color: #F2D474;
+    background-color: #F29574;
     margin-left: 0px;
     margin-right: 0px;
     flex-wrap: wrap;
@@ -66,7 +66,7 @@ body{
 }
 
 .avatar_blurb p {
-    background-color: white;
+    background-color: #FCD079;
     font-family: 'Baloo Da 2', cursive;
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@ body{
 }
 
 .avatar_image {
-    border: 1px solid #E08B45;
+    border: 1px solid #FCD079;
     border-radius: 4px;
     max-width: 320px;
     /*display: flex;
@@ -99,7 +99,7 @@ body{
 }
 
 .stats {
-    background-color: #ED593E;
+    background-color: #FCD079;
     max-width: 640px;
     padding: 10px;
     font-family: 'Baloo Da 2', cursive;
@@ -118,7 +118,7 @@ body{
 
     .avatar_blurb {
         font-family: sans-serif;
-        background-color: #ED593E;
+        background-color: #FCD079;
         display: inline-flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
