@@ -61,6 +61,7 @@ body{
     font-family: 'Baloo Da 2', cursive;
     background-color: #ED593E;
     display: flex;
+    flex-wrap: wrap;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
@@ -74,6 +75,7 @@ body{
     max-width: 320px;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .wrapper {
