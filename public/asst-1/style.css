@@ -79,8 +79,8 @@ body{
     border: 1px solid #E08B45;
     border-radius: 4px;
     max-width: 320px;
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
 
 }
 
