@@ -54,6 +54,7 @@ body{
 .header_image {
     order: 2;
     max-width: 30%;
+    min-width: 30%;
     height: auto;
 }
 
