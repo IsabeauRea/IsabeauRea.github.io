@@ -61,7 +61,7 @@ body{
 .avatar_blurb {
     display: flex;
     flex-wrap: wrap;
-    /*flex-flow: column wrap;*/
+    flex-flow: column wrap;
     max-width: 320px;
     justify-content: center;
 }
@@ -71,6 +71,7 @@ body{
     display: flex;
     align-items: center;
     padding: 20px;
+    width: 200px;
     justify-content: center;
     margin: 3px;
     background-color: #FCD079;
@@ -80,6 +81,8 @@ body{
     border: 1px solid #FCD079;
     border-radius: 4px;
     max-width: 320px;
+    height: 200px;
+    width: 300px
     /*display: flex;
     flex-wrap: wrap;*/
 
