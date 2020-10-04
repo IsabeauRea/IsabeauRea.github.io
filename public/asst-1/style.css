@@ -111,11 +111,18 @@ body{
 }
 
 @media (max-width: 1000px){
-    .content_container {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 960px;
+    }
+
+    /*.content_container {
         max-width: 960px;
         align-items: center;
         justify-content: center;
-    }
+    }*/
 
     .avatar_blurb {
         /*font-family: sans-serif;*/
