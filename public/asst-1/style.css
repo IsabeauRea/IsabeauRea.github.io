@@ -66,13 +66,13 @@ body{
 }
 
 .avatar_blurb p {
-    background-color: #FCD079;
     font-family: 'Baloo Da 2', cursive;
     display: flex;
     align-items: center;
     padding: 20px;
     justify-content: center;
     margin: 3px;
+    background-color: #FCD079;
 }
 
 .avatar_image {
