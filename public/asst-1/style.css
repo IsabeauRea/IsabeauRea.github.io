@@ -58,7 +58,6 @@ body{
 }
 
 .avatar_blurb {
-    background-color: #ED593E;
     display: flex;
     flex-wrap: wrap;
     flex-flow: column wrap;
@@ -67,10 +66,11 @@ body{
 }
 
 .avatar_blurb p {
+    background-color: #ED593E;
     font-family: 'Baloo Da 2', cursive;
     display: flex;
     align-items: center;
-    padding: ;
+    padding: 5px;
     justify-content: center;
     margin: 3px;
 }
