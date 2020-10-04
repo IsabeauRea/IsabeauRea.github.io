@@ -70,7 +70,7 @@ body{
     font-family: 'Baloo Da 2', cursive;
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 20px;
     justify-content: center;
     margin: 3px;
 }
