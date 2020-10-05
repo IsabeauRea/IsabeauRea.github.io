@@ -69,6 +69,7 @@ body{
     align-items: center;
     padding: 20px;
     width: 200px;
+    height: 20px;
     justify-content: center;
     margin: 10px;
     background-color: #FCD079;
@@ -79,15 +80,14 @@ body{
     border-radius: 4px;
     max-width: 320px;
     height: 200px;
-    width: 300px
-    /*display: flex;
-    flex-wrap: wrap;*/
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .wrapper {
     display: flex;
-    /* flex-flow: row wrap;*/
     justify-content: center;
 }
 
@@ -96,6 +96,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .stats {
@@ -117,9 +118,16 @@ h3 {
 
     .avatar_blurb {
         align-items: center;
-        display: inline-flex;
         max-width: none;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 640px) {
+    .avatar_blurb {
+        align-items: center;
         flex-direction: column;
+        max-width: none;
         margin-bottom: 5px;
     }
 }
