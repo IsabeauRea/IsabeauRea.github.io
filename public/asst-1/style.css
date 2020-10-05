@@ -118,8 +118,7 @@ h3 {
     .avatar_blurb {
         align-items: center;
         display: inline-flex;
-        /*flex-flow: row wrap;*/
-       /* justify-content: space-evenly; */
+        max-width: none;
         flex-direction: column;
         margin-bottom: 5px;
     }
