@@ -1,7 +1,6 @@
 body{
     background-color: #FCAE79;
 }
-
 /*header { 
     background-color: #F7AD40;
     display: flex;
@@ -30,7 +29,6 @@ body{
     flex-flow: row wrap;
     align-items: center;
   }
-
   /*
   .header {
     display: flex;
@@ -51,6 +49,7 @@ body{
     align-items: center;
     justify-content: center;
   }*/
+
 .header_image {
     order: 2;
     width: 300px;
@@ -114,8 +113,8 @@ h3 {
     .wrapper {
         display: flex;
         justify-content: center;
-        align-items: center;
-        max-width: 960px;
+        /*align-items: center;
+        max-width: 960px;*/
     }
 
     .avatar_blurb {
