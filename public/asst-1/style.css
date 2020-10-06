@@ -1,15 +1,6 @@
 body{
-    background-color: #FCAE79;
+    background-color: #878CF6;
 }
-/*header { 
-    background-color: #F7AD40;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 20px;
-
-}*/
 
 .header {
     display: flex;
@@ -19,8 +10,8 @@ body{
     margin-bottom: 20px;
     padding: 15px;
     font-family: 'Baloo Da 2', cursive;
-    color: #F2D474;
-    background-color: #F29574;
+    color: #BB8CEB;
+    background-color: #8A74D4;
     margin-left: 0px;
     margin-right: 0px;
     flex-wrap: wrap;
@@ -29,26 +20,6 @@ body{
     flex-flow: row wrap;
     align-items: center;
   }
-  /*
-  .header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    padding: 15px;
-    font-family: 'Baloo Da 2', cursive;
-    color: #EDB73E;
-    background-color: #ED593E;
-    margin-left: 0px;
-    margin-right: 0px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-  }*/
 
 .header_image {
     order: 2;
@@ -72,18 +43,17 @@ body{
     height: 20px;
     justify-content: center;
     margin: 10px;
-    background-color: #FCD079;
+    background-color: #BB8CEB;
 }
 
 .avatar_image {
-    border: 1px solid #FCD079;
+    border: 1px solid #BB8CEB;
     border-radius: 4px;
     max-width: 320px;
     height: 200px;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .wrapper {
@@ -100,7 +70,7 @@ body{
 }
 
 .stats {
-    background-color: #FCD079;
+    background-color: #BB8CEB;
     max-width: 640px;
     padding: 10px;
     font-family: 'Baloo Da 2', cursive;
