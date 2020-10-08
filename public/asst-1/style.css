@@ -51,7 +51,7 @@ body{
     border: 1px solid #BB8CEB;
     border-radius: 4px;
     max-width: 320px;
-    height: 280px;
+    height: 288px;
     width: 180px;
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +76,7 @@ body{
     font-family: 'Baloo Da 2', cursive;
 }
 
-h3 {
+h2 {
     font-style: italic;
 }
 
