@@ -37,6 +37,7 @@ body{
 .avatar_blurb p {
     font-family: 'Baloo Da 2', cursive;
     display: flex;
+    margin-right: 15px;
     align-items: center;
     padding: 20px;
     width: 200px;
@@ -65,7 +66,7 @@ body{
     max-width: 960px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
