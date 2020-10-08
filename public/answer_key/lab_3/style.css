@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: lightblue;
+
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Turret Road', cursive;
+  font-family: 'Cinzel Decorative', cursive;
   color: #2a2a2a;
 }
 
@@ -60,7 +60,7 @@ p, li {
 }
 
 body > * {
-  background-color: rgba(0,255,0,0.5);
+  background-color: red;
   padding: 1%;
 }
 
@@ -74,14 +74,9 @@ h1 {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-.header #img {
-=======
 .header img {
->>>>>>> 00fe1777fa62b0bcd56987b128f946baff0e98d7
   display: block;
-  height: 40px;
-  width: 40px;
+  height: 60px;
   padding-top: 20.15px;
 }
 
@@ -126,15 +121,13 @@ nav a, nav span {
 }
 
 .aside {
-  flex: 1;
   display: flex;
   flex-flow: row wrap;
   flex: 2;
 }
 
 .aside a {
-  float: left;
-  display: block;
+  display: flex;
   flex-basis: 50%;
 }
 
@@ -145,14 +138,4 @@ nav a, nav span {
 
 .footer {
   margin-top: 10px;
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: row;
 }
-
-.box {
-  width: 400px;
-}
-=======
-}
->>>>>>> 00fe1777fa62b0bcd56987b128f946baff0e98d7
