@@ -23,8 +23,8 @@ body{
 
 .header_image {
     order: 2;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
 }
 
 .avatar_blurb {
@@ -41,7 +41,7 @@ body{
     margin-right: 15px;
     align-items: center;
     padding: 20px;
-    width: 200px;
+    width: 300px;
     height: 20px;
     justify-content: center;
     margin: 10px;
@@ -52,8 +52,8 @@ body{
     border: 1px solid #BB8CEB;
     border-radius: 4px;
     max-width: 320px;
-    height: 80px;
-    width: 180px;
+    height: 200px;
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
 }
