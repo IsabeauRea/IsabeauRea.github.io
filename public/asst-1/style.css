@@ -30,7 +30,6 @@ body{
 .avatar_blurb {
     display: flex;
     flex-wrap: wrap;
-    flex: 0 1 auto;
     max-width: 320px;
     justify-content: center;
     margin-right: 15px;
@@ -52,8 +51,8 @@ body{
     border: 1px solid #BB8CEB;
     border-radius: 4px;
     max-width: 320px;
-    height: 300px;
-    width: 200px;
+    height: 200px;
+    width: 100px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -67,7 +66,6 @@ body{
     max-width: 960px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: flex-start;
 }
 
@@ -89,14 +87,24 @@ h3 {
     }
 
     .avatar_blurb {
+        flex: 0 1 auto;
         align-items: center;
         max-width: none;
         margin-bottom: 5px;
     }
+
+    .container {
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 640px) {
+    .container {
+        justify-content: center;
+    }
+
     .avatar_blurb {
+        flex: 1 0 auto;
         align-items: center;
         flex-direction: column;
         max-width: none;
