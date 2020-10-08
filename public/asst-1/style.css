@@ -7,7 +7,7 @@ body{
     align-items: center;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 15px;
     font-family: 'Baloo Da 2', cursive;
     color: #BB8CEB;
@@ -23,8 +23,8 @@ body{
 
 .header_image {
     order: 2;
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
 }
 
 .avatar_blurb {
@@ -61,7 +61,7 @@ body{
     justify-content: center;
 }
 
-.content_container {
+.container {
     max-width: 960px;
     display: flex;
     flex-wrap: wrap;
