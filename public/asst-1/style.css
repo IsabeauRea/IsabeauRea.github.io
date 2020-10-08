@@ -30,7 +30,7 @@ body{
 .avatar_blurb {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 0 auto;
+    flex: 0 1 auto;
     max-width: 320px;
     justify-content: center;
 }
@@ -52,8 +52,8 @@ body{
     border: 1px solid #BB8CEB;
     border-radius: 4px;
     max-width: 320px;
-    height: 100px;
-    width: 200px;
+    height: 80px;
+    width: 180px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -67,7 +67,7 @@ body{
     max-width: 960px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
 }
 
