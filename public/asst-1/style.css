@@ -67,6 +67,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .stats {
@@ -87,20 +88,20 @@ h2 {
     }
 
     .avatar_blurb {
-        flex: 0 1 auto;
+        flex: 1 0 auto;
         align-items: center;
         max-width: none;
         margin-bottom: 5px;
     }
 
     .container {
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 
 @media (max-width: 640px) {
     .container {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .avatar_blurb {
