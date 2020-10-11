@@ -33,10 +33,10 @@ html, body {
   
   .flex-outer {
     max-width: 800px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding: 0px 16px;
   }
   
@@ -133,7 +133,7 @@ html, body {
     border: none;
   }
   
-  .flex-outer li button {
+  .flex-outer > li > button {
     margin-left: 10px;
     padding: 6px 12px;
     background-color: white;
