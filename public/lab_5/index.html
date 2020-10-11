@@ -67,6 +67,8 @@
     </div>
     <script>
         function clickMe() {
+            fetch("/api")
+            .then((response) => response.text())
             const content = document.querySelector(".button");
             content.innerHTML = "<style>body {background:#BFE5D9; padding: 50px 0;} body > * {background-color: #a5d6a7;}</style> OUCH!";
             const hellohead = document.querySelector('.header');
@@ -74,7 +76,7 @@
             const hellotitle = document.querySelector('title');
             hellotitle.innerHTML = "Hello World!";
             const margin = document.querySelector(".flex-outer");
-            margin.innerHTML = "<style>margin: 0 auto;</style>"
+            /*margin.innerHTML = "<style>margin: 0 auto;</style>"*/
             const fruits = ["Peach","Banana","Mango"];
             const checkbox = document.querySelectorAll(".checkbox-list-label");
             checkbox.forEach(((check, i) => {
@@ -82,5 +84,6 @@
             }))
             console.log(content)
         }
+        /*checkbox.innerHTML = '<li><input type="checkbox" name="peach" id="peach"><label for="peach">Peach</label></li><li><input type="checkbox" name="banana" id="banana"><label for="banana">Banana</label></li><li><input type="checkbox" name="mango" id="mango"><label for="mango">Mango</label></li>' */
     </script>
 </body>
