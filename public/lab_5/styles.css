@@ -47,11 +47,6 @@ html, body {
     align-items: center;
   }
   
-  .flex-inner {
-    padding: 0 8px;
-    justify-content: space-between;  
-  }
-  
   .flex-outer > li:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -62,6 +57,11 @@ html, body {
     font-weight: 100;
     letter-spacing: .09em;
     text-transform: uppercase;
+  }
+
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
   }
   
    /* TYPOGRAPHY */
