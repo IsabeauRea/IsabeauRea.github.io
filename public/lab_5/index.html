@@ -67,11 +67,12 @@
     </div>
     <script>
         function clickMe() {
-            fetch("/api")
+            /*fetch("/api")
             .then((response) => response.text())
-            .then((response) => {
+            .then((response) => {*/
                 const content = document.querySelector(".button");
                 content.innerHTML = "<style>body {background:#BFE5D9; padding: 50px 0;} body > * {background-color: #a5d6a7;}</style> OUCH!";
+                /*content.style.backgroundColor = "#a5d6a7"*/
                 const hellohead = document.querySelector('.header');
                 hellohead.innerHTML = "<h1>response.text()</h1>";
                 const hellotitle = document.querySelector('title');
@@ -81,15 +82,15 @@
                 const fruits = ["Peach","Banana","Mango"];
                 const checkbox = document.querySelectorAll(".checkbox-list-label");
                 checkbox.forEach(((check, i) => {
-                    check.innerText = fruits[i]
+                    check.getElementById.innerText = fruits[i]
                 }))
-                return content
+               /* return content
                 return hellohead
                 return hellotitle
                 return margin
                 return fruits
                 return checkbox
-            })
+            })*/
             console.log(content)
         }
         /*checkbox.innerHTML = '<li><input type="checkbox" name="peach" id="peach"><label for="peach">Peach</label></li><li><input type="checkbox" name="banana" id="banana"><label for="banana">Banana</label></li><li><input type="checkbox" name="mango" id="mango"><label for="mango">Mango</label></li>' */
