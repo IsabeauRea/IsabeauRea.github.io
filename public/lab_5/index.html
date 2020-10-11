@@ -67,11 +67,8 @@
     </div>
     <script>
         function clickMe() {
-            fetch('/api')
-            .then((response) => response.text())
-            .then((response) => {
-                console.log(response);
-            })
+            const content = document.querySelector(".content")
+            content.innerHTML = "HI THERE"
         }
     </script>
 </body>
