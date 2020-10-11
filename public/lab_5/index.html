@@ -38,20 +38,20 @@
                             </li>
                             <li>
                                 <div class="checkbox-list-label">
-                                    <p>Fruits</p>
+                                    <p>AGE</p>
                                     <ul class="flex-inner">
                                         <li>
-                                            <input type="checkbox" name="peach" id="peach">
-                                            <label for="peach">Peach</label>
+                                            <input type="checkbox" name="18to35" id="eighteen-to-thirtyfive">
+                                            <label for="eighteen-to-thirtyfive">18-35</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" name="banana" id="banana">
-                                            <label for="banana">Banana</label>
+                                            <input type="checkbox" name="35to50" id="thirtyfive-to-fifty">
+                                            <label for="thirtyfive-to-fifty">35-50</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" name="mango" id="mango">
-                                            <label for="mango">Mango</label>
-                                        </li> 
+                                            <input type="checkbox" name="50to65" id="fifty-to-sixtyfive">
+                                            <label for="fifty-to-sixtyfive">50-65</label>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -75,6 +75,11 @@
             hellotitle.innerHTML = "Hello World!";
             const margin = document.querySelector(".flex-outer");
             margin.innerHTML = "<style>margin: 0 auto;</style>"
+            const fruits = ["Peach","Banana","Mango"];
+            const checkbox = document.querySelectorAll(".checkbox-list-label");
+            checkbox.forEach(((check, i) => {
+                check.innerText = fruits[i]
+            }))
             console.log(content)
         }
     </script>
