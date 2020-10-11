@@ -65,40 +65,29 @@
     </div>
     <script>
         function testFunction() {
-            fetch("/api")
+            fetch('/api')
             .then((response) => response.text())
-            .then((response) => {
-                
-                const fruits = ["Peach","Banana","Mango"];
-                
-                const checkboxes = document.querySelectorAll(".flex-inner li label");
-
-                console.log(checkboxes.length, checkboxes[0])
-                checkboxes.forEach((check, i) => {
-                    console.log(check, i)
-                    const text = check.innerText
-                    check.innerText = fruits[i]
+            .then((response) =>{
+                console.log(response);
+                const fruits  =['Peach', 'Mango', 'Nectarine']
+                const checkbox = document.querySelectorAll('.flex-inner li label')
+                console.log(checkbox.length, checkbox[0]);
+                checkbox.forEach((check, i) => {
+                    console.log(check, i);
+                    const text = check.innerText;
+                    check.innerText = fruits[i];
                 })
-                
-                const hellohead = document.querySelector('h1');
-                hellohead.innerText = response;
-                
-                const col = 'rgb(236, 212, 255)'
-                document.style.background = col;
-
-                const checkboxfruits = document.querySelector('.checkbox-list-label')
-                checkboxfruits.innerText = "Fruits";
-
-                /*const content = document.querySelector(".button");
-                content.innerHTML = "<style>body {background:#BFE5D9; padding: 50px 0;} body > * {background-color: #a5d6a7;}</style> OUCH!";*/
-                
-                
-                const hellotitle = document.querySelector('title');
-                hellotitle.innerHTML = response.text();
-                /*margin.innerHTML = "<style>margin: 0 auto;</style>"*/ 
-                const margin = document.querySelector(".flex-outer");
+                const boxfruit = document.querySelector('.checkbox-list-label')
+                boxfruit.innerText = "Fruits";
+                const headerlabel= document.querySelector('h1')
+                headerlabel.innerText=response;
+                const color = 'rgb(' + (236) + ',' + (212) + ',' + (255) + ')'
+                document.body.style.background= color;
+                const margin = document.querySelector('.flex-outer')
+                margin.style ="margin: 0 auto;";
+                const labtitle = document.querySelector('title');
+                labtitle.innerHTML = response.text();
             })
         }
-        /*checkbox.innerHTML = '<li><input type="checkbox" name="peach" id="peach"><label for="peach">Peach</label></li><li><input type="checkbox" name="banana" id="banana"><label for="banana">Banana</label></li><li><input type="checkbox" name="mango" id="mango"><label for="mango">Mango</label></li>' */
     </script>
 </body>
