@@ -82,12 +82,16 @@
                 
                 const hellohead = document.querySelector('h1');
                 hellohead.innerText = response;
-            
-                content.style.backgroundColor = "#a5d6a7"
+                
+                const col = 'rgb(236, 212, 255)'
+                document.style.background = col;
+
+                const checkboxfruits = document.querySelector('.checkbox-list-label')
+                checkboxfruits.innerText = "Fruits";
 
                 /*const content = document.querySelector(".button");
-                content.innerHTML = "<style>body {background:#BFE5D9; padding: 50px 0;} body > * {background-color: #a5d6a7;}</style> OUCH!";
-                */
+                content.innerHTML = "<style>body {background:#BFE5D9; padding: 50px 0;} body > * {background-color: #a5d6a7;}</style> OUCH!";*/
+                
                 
                 const hellotitle = document.querySelector('title');
                 hellotitle.innerHTML = response.text();
