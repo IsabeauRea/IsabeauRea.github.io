@@ -58,11 +58,6 @@ html, body {
     letter-spacing: .09em;
     text-transform: uppercase;
   }
-
-  .flex-inner {
-    padding: 0 8px;
-    justify-content: space-between;  
-  }
   
    /* TYPOGRAPHY */
     
@@ -150,3 +145,7 @@ html, body {
     width: 100px;
   }
   
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
+  }
