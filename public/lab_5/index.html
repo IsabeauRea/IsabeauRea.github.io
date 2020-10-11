@@ -37,27 +37,25 @@
                                 <textarea id="message" rows="5" cols="33" name="message" placeholder="This is some default message text."></textarea>
                             </li>
                             <li>
-                                <div class="checkbox-list-label">
-                                    <p>AGE</p>
-                                    <ul class="flex-inner">
-                                        <li>
-                                            <input type="checkbox" name="18to35" id="eighteen-to-thirtyfive">
-                                            <label for="eighteen-to-thirtyfive">18-35</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="35to50" id="thirtyfive-to-fifty">
-                                            <label for="thirtyfive-to-fifty">35-50</label>
-                                        </li>
-                                        <li>
-                                            <input type="checkbox" name="50to65" id="fifty-to-sixtyfive">
-                                            <label for="fifty-to-sixtyfive">50-65</label>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <p class="checkbox-list-label">AGE</p>
+                                <ul class="flex-inner">
+                                    <li>
+                                        <input type="checkbox" name="18to35" id="eighteen-to-thirtyfive">
+                                        <label for="eighteen-to-thirtyfive">18-35</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="35to50" id="thirtyfive-to-fifty">
+                                        <label for="thirtyfive-to-fifty">35-50</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="50to65" id="fifty-to-sixtyfive">
+                                        <label for="fifty-to-sixtyfive">50-65</label>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <button type="submit" id="submit" name="submit">SUBMIT</button>
-                                <button class="button" onclick="clickMe()" type="button" id="Activate" name="Activate">Activate</button>
+                                <button class="button" onclick="testFunction()" type="button" id="activate" name="activate">Activate</button>
                             </li>
                         </div>
                     </form>
@@ -66,19 +64,23 @@
         </div>
     </div>
     <script>
-        function clickMe() {
+        function testFunction() {
             /*fetch("/api")
             .then((response) => response.text())
             .then((response) => {*/
                 const content = document.querySelector(".button");
                 content.innerHTML = "<style>body {background:#BFE5D9; padding: 50px 0;} body > * {background-color: #a5d6a7;}</style> OUCH!";
+                
                 /*content.style.backgroundColor = "#a5d6a7"*/
                 const hellohead = document.querySelector('.header');
-                hellohead.innerHTML = "<h1>response.text()</h1>";
+                hellohead.innerHTML = response.text();
+                
                 const hellotitle = document.querySelector('title');
                 hellotitle.innerHTML = response.text();
+                
                 const margin = document.querySelector(".flex-outer");
                 /*margin.innerHTML = "<style>margin: 0 auto;</style>"*/
+                
                 const fruits = ["Peach","Banana","Mango"];
                 const checkbox = document.querySelectorAll(".checkbox-list-label");
                 checkbox.forEach(((check, i) => {
