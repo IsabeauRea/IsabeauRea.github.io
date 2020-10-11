@@ -37,7 +37,7 @@
                                 <textarea id="message" rows="5" cols="33" name="message" placeholder="This is some default message text."></textarea>
                             </li>
                             <li>
-                                <p class="checkbox-list-label">AGE</p>
+                                <p class="checkbox-list-label">Age</p>
                                 <ul class="flex-inner">
                                     <li>
                                         <input type="checkbox" name="18to35" id="eighteen-to-thirtyfive">
@@ -69,7 +69,7 @@
             .then((response) => response.text())
             .then((response) =>{
                 console.log(response);
-                const fruits  =['Peach', 'Mango', 'Nectarine']
+                const fruits  =['Peach', 'Mango', 'Kiwi']
                 const checkbox = document.querySelectorAll('.flex-inner li label')
                 console.log(checkbox.length, checkbox[0]);
                 checkbox.forEach((check, i) => {
@@ -81,7 +81,7 @@
                 boxfruit.innerText = "Fruits";
                 const headerlabel= document.querySelector('h1')
                 headerlabel.innerText=response;
-                const color = 'rgb(' + (200) + ',' + (210) + ',' + (235) + ')'
+                const color = 'rgb(' + (170) + ',' + (100) + ',' + (135) + ')'
                 document.body.style.background= color;
                 const margin = document.querySelector('.flex-outer')
                 margin.style ="margin: 0 auto;";
