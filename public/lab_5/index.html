@@ -69,8 +69,10 @@
         function clickMe() {
             const content = document.querySelector(".button");
             content.innerHTML = "<style>body {background:#BFE5D9; padding: 50px 0;} body > * {background-color: #a5d6a7;}</style> OUCH!";
-            const hello = document.querySelector('.header');
-            hello.innerHTML = "<h1>Hello World!</h1> <head>Hello World!</head>";
+            const hellohead = document.querySelector('.header');
+            hellohead.innerHTML = "<h1>Hello World!</h1>";
+            hellotitle = document.querySelector('title');
+            hellotitle.innerHTML = "<title>Hello World!</title>";
             console.log(content)
         }
     </script>
