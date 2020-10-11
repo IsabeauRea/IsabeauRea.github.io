@@ -57,7 +57,7 @@
                             </li>
                             <li>
                                 <button type="submit" id="submit" name="submit">SUBMIT</button>
-                                <button class="button" onclick="clickMe()" type="submit" id="Activate" name="Activate">ACTIVATE</button>
+                                <button class="button" onclick="clickMe()" type="button" id="Activate" name="Activate">ACTIVATE</button>
                             </li>
                         </div>
                     </form>
@@ -68,7 +68,9 @@
     <script>
         function clickMe() {
             const content = document.querySelector(".button")
-            content.innerHTML = "HI THERE"
+            content.innerHTML = "Ouch!"
+            content.innerHTML = "<style>body {background:blue; padding: 50px 0;}</style>"
+            console.log(content) 
         }
     </script>
 </body>
