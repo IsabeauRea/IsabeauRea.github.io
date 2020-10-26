@@ -8,8 +8,10 @@ function range(int) {
   return arr;
 }
 
-function getRandomIntInclusive(max) {
-  return Math.floor(Math.random() * Math.floor(max));
+function getRandomIntInclusive(min, max) {
+  const min1 = Math.ceil(min);
+  const max1 = Math.floor(max);
+  return Math.floor(Math.random() * (max1 - min1 + 1) + min1);
 }
 
 function sortByKey(a, b, key) {
@@ -38,22 +40,22 @@ document.body.addEventListener('submit', async (e) => {
       }
       const newArr = range(10);
       const newArr2 = newArr.map(() => {
-        const number = getRandomIntInclusive(243);
+        const number = getRandomIntInclusive(0, 243);
         return fromServer[number];
       });
 
-      const reverseList = newArr2.sort((a,b) => sortByKey(a,b,'name'));
+      const reverseList = newArr2.sort((a, b) => sortByKey(b,a, 'name'));
       const ol = document.createElement('ol');
       ol.className = 'flex-inner';
       $('form').prepend(ol);
 
-      reverseList.forEach((el) => {
+
+      reverseList.forEach((el, i) => {
         const li = document.createElement('li');
-        $(li).append(`<input type="checkbox" values=${el.code}/>`);
+        $(li).append(`<input type="checkbox" value=${el.code} id=${el.code}/>`);
         $(li).append(`<label for=${el.code}>${el.name}</label>`);
         (ol).appendChild(li);
       }); 
-      
     })
     .catch((err) => console.log(err));
 });
