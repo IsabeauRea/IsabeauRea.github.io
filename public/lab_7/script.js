@@ -1,19 +1,40 @@
 function convertRestaurantsToCategories(restaurantList) {
-  // process your restaurants here!
-  return list;
+  const categoryArray = [];
+  const result = {}
+  for (let i = 0; i < restaurantList.length; i += 1){
+    categoryArray.push(restaurantList[i].category);  
+  }
+  for (let i = 0; i < categoryArray.length; 1 += 1) {
+    if (!result[categoryArray[i]]){
+      result[categoryArray[i]]=0;
+    }
+    result[categoryArray[i]] += 1;
+  }
+  const reply = Object.keys(result).map((category) => ({
+    y: result[category],
+    label: category
+  }));
+  console.log('reply', reply);
+  return reply;
 }
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
+  console.log("makeYourOptionsObject");
   CanvasJS.addColorSet('customColorSet1', [
     // add an array of colors here https://canvasjs.com/docs/charts/chart-options/colorset/
+    "#B08BEB",
+    "#3EA0DD",
+    "#F5A52A",
+    "#23BFAA",
+    "#FAA586"
   ]);
 
   return {
     animationEnabled: true,
-    colorSet: 'customColorSet1',
-    title: {
-      text: 'Change This Title'
+    colorSet:'customColorSet1',
+    title:{
+      text:'Places to Eat Out In Future'
     },
     axisX: {
       interval: 1,
@@ -21,16 +42,37 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     },
     axisY2: {
       interlacedColor: 'rgba(1,77,101,.2)',
-      gridColor: 'rgba(1,77,101,.1)',
-      title: 'Change This Title',
+      gridColor:'rgba(1,77,101,.1)',
+      title:'Change This Title',
       labelFontSize: 12,
-      scaleBreaks: {customBreaks: []} // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
+      scaleBreaks: {customBreaks: [
+        {
+          type:'zigzag',
+          startValue: 40,
+          endValue: 50,
+          color:'blue'
+        },
+        {
+          type:'zigzag',
+          startValue: 85,
+          endValue: 100,
+          color:'blue'
+        },
+        {
+          type:'zigzag',
+          startValue:140,
+          endValue:175,
+          color:'blue'
+        }
+      ]}
     },
+    
     data: [{
-      type: 'bar',
-      name: 'restaurants',
-      axisYType: 'secondary',
-      dataPoints: datapointsFromRestaurantsList
+      type:'bar',
+      name:'restaurants',
+      axisYType:'secondary',
+      color:'#014D65',
+      dataPoints:datapointsFromRestaurantsList
     }]
   };
 }
@@ -64,3 +106,4 @@ document.body.addEventListener('submit', async (e) => {
       console.log(err);
     });
 });
+

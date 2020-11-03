@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-vars */
 import express from 'express';
 import dotenv from 'dotenv';
-import countries from './public/lab_6/countries.js';
+import fetch from 'node-fetch';
 
 dotenv.config();
 
@@ -26,13 +26,15 @@ app.route('/api')
     res.send(`Lab 5 for ${process.env.NAME}`);
   })
 
+  .post(async (req, res) => {
+    const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
+    const json = await data.json();
+    console.log('fetch request data', json);
+    res.json(json);
 
-  .post((req, res) => {
     console.log('POST request detected');
     console.log("Form data in req.body", req.body);
-    res.json(countries);
   }); 
-
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);})
