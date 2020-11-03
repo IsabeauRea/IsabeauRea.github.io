@@ -1,10 +1,10 @@
 function convertRestaurantsToCategories(restaurantList) {
   const categoryArray = [];
   const result = {}
-  for (let i = 0; i < restaurantList.length; i += 1){
+  for (let i = 0; i < restaurantList.length; i += 1) {
     categoryArray.push(restaurantList[i].category);  
   }
-  for (let i = 0; i < categoryArray.length; 1 += 1) {
+  for (let i = 0; i < categoryArray.length; i += 1) {
     if (!result[categoryArray[i]]){
       result[categoryArray[i]]=0;
     }
@@ -34,7 +34,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     animationEnabled: true,
     colorSet:'customColorSet1',
     title:{
-      text:'Places to Eat Out In Future'
+      text:'Places To Eat Out In Future'
     },
     axisX: {
       interval: 1,
