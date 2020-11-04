@@ -1,5 +1,6 @@
 body{
     background-color: #878CF6;
+    background-image: linear-gradient(purple, blue);
 }
 
 .header {
