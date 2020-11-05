@@ -82,7 +82,7 @@ li h2 {
     font-style: italic;
 }
 
-@media (max-width: 1000px){
+@media (min-width: 1600px){
     .wrapper {
         display: flex;
         justify-content: center;

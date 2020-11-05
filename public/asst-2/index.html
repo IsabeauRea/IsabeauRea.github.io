@@ -1,41 +1,29 @@
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Asst 2</title>
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <script src="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json"></script>
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="normalize.css"/>
+        <link rel="stylesheet" type="text/css" href="skeleton.css"/>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="container flex-outer">
-                <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="one-half column" style="margin-top: 10%; bottom: 10%">
                     <h1>Isabeau Rea, Jasmine Soni, Zenobia Charleus Asst 2</h1>
+                    <input type="text" name="textentry" placeholder="Filter for name or zipcode"></input>
+                    <div id="navContainer">
+                        <ul class="suggestions"></ul>
+                    </div>
                 </div>
-                <div class="canvasjs-chart-container">
-                    <div id="chartContainer"> </div>
-                </div>
-                <form>
-                    <label for="textinput">Last Name</label>
-                    <input type="text" name="lname" id="lname" maxlength="140">
-                </form>
-                <div class="targeting">
-                </div>
-                <address>
-                    <em>
-                        <strong>Dr. Terra Nova</strong><br>
-                        Faculty of Information<br>
-                        University of Maryland<br>
-                        College Park, MD 20742<br>
-                        USA<br>
-                        <strong>Tel:</strong><a href="/tel:/g"> 123-456-7890</a><br>
-                        <strong>Email:</strong><a href="/mailto:/g"> no_reply@example.com</a>
-                        <br><br>
-                      </em>
-                </address>
             </div>
         </div>
-        <script src="script.js"></script>
         <script src="canvasjs.min.js"></script>
     </body>
+        
+        
 
 
