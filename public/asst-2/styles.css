@@ -1,8 +1,17 @@
 body{
     background-color: #878CF6;
     background-image: linear-gradient(purple, blue);
+    box-sizing: border-box;
+    background: #ffc600;
+    font-size: 20px;
+    font-weight: 200;
 }
 
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  
 .header {
     display: flex;
     align-items: center;
