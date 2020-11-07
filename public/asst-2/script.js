@@ -8,7 +8,7 @@ fetch(endpoint)
 function findMatches(wordsToMatch, restaurants) {
     return restaurants.filter(place => {
         const regex = new RegExp(wordsToMatch, 'gi');
-        return place.city.match(regex) || place.zip.match(regex)
+        return place.name.match(regex) || place.zip.match(regex)
     });
 }
 
@@ -16,12 +16,19 @@ function displayMatches() {
     const matchArray = findMatches(this.value, restaurants);
     const html = matchArray.map(place => {
         const regex = new RegExp(this.value, 'gi');
-        const cityName = place.city.replace(regex, `<span class="h1">${this.value}</span>`);
+        const title = place.name.replace(regex, `<span class="h1">${this.value}</span>`);
         const zipcode = place.zip.replace(regex, `<span class="h1">${this.value}</span>`);
+        const city = place.city.replace(regex, `<span class="h1">${this.value}</span>`);
+        const category = place.category.replace(regex, `<span class="h1">${this.value}</span>`);
         return `
         <li>
-            <span class="name">${cityName}, ${zipcode}</span><br>
-            <span class="population">${(place.population)}</span>
+            <span class="name">${title}</span><br>
+            <span class="category">${place.category}</span>
+            <address>${place.address_line_1}<br>
+            ${place.city}<br>
+            ${place.zip}<address>
+            </li>
+
         </li>
         `;
     }).join('');
