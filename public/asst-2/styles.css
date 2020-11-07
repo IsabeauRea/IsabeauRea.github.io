@@ -1,5 +1,5 @@
 body{
-    background-color: #878CF6;
+    background-color: #BDC4DB;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: 200;
@@ -22,7 +22,7 @@ margin: 50px auto;
 }
 
 .suggestions li {
-    background-image: linear-gradient(purple, blue);
+    background-image: linear-gradient(#7880B5, #6987C9);
     list-style: none;
     border-bottom: 1px solid #D8D8D8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
@@ -34,15 +34,8 @@ margin: 50px auto;
     text-transform: capitalize;
 } 
 
-
-  .suggestions li:nth-child(even) {
-    transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
-    background: linear-gradient(to bottom, purple 0%, blue 100%);
-  }
-  
-  .suggestions li:nth-child(odd) {
-    transform: perspective(100px) rotateX(-3deg) translateY(3px);
-    background: linear-gradient(to top,  pink 0%,white 100%);
+  .suggestions li:nth-child(even, odd) {
+    background: linear-gradient(to bottom, #7880B5 25%,#6BBAEC 80%);
   }
 
 .header {
