@@ -53,10 +53,17 @@ function displayMatches(e, dataSet) {
 
     async function mainThread() {
         console.log('Firing main thread');
-        await loadData();
+        const manip = await loadData();
         console.log('Check session storage', sessionStorage);
         const restaurantData = JSON.parse(sessionStorage.getItem('restaurantData'));
-        manipulateAndBind(restaurantData);
+        manipulateAndBind(manip);
+        console.table(restaurantData);
+        restaurantData.forEach(item => {
+            const target = document.querySelector('.flex-outer');
+            const element = document.createElement('span');
+            element.innerText = `<span>${item.proper_hand_washing}</span>`;
+            target.append(element);
+        })
     }
 
     window.onload = mainThread;
