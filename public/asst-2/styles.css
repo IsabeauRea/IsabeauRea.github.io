@@ -10,7 +10,7 @@ body{
     justify-content: space-around;
     margin-bottom: 15px;
     padding: 15px;
-    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Karla', sans-serif;
     color: #BB8CEB;
     background-color: #8A74D4;
     margin-left: 0px;
@@ -37,7 +37,7 @@ body{
 }
 
 .avatar_blurb p {
-    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Karla', sans-serif;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -75,7 +75,7 @@ body{
     background-color: #BB8CEB;
     max-width: 640px;
     padding: 10px;
-    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Karla', sans-serif;
 }
 
 li h2 {
