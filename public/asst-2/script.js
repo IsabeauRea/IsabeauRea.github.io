@@ -1,29 +1,8 @@
-const { default: fetch } = require("node-fetch");
-
-function manipulateAndBind(incomingArray) {
-    const arrayOfTenItems = range(10);
-    const randomRestaurantsArray = arrayOfTenItems.map((item) => {
-        const which = getRandomIntInclusive(0, incomingArray.length);
-        const restaurant = incomingArray[which];
-        return restaurant;
+function findMatches(wordsToMatch, cities) {
+    return cities.filter(place => {
+        const regex = new RegExp(wordsToMatch, 'gi');
+        return place.city.match(regex) || place.state.match(regex)
     });
-
-    sessionStorage.setItem('shortRestaurantList', JSON.stringify(randomRestaurantsArray));
-
-    const div = document.createElement('div');
-    div.innerHTML = `<h2>What we have</h2> <br />${JSON.stringify(randomRestaurantsArray[0])}<br /><br />`;
-    $('.flex-outer').append(div);
-
-    const newDataShape = changeDataShape(randomRestaurantsArray);
-
-    const div2 = document.createElement('div');
-    const obj = {
-        label: randomRestaurantsArray[0].category,
-        y: randomRestaurantsArray.length
-    };
-    div.innerHTML = `<h2>What we want</h2> <br /> <h4>A category, how many things are in the category</h4><pre><code class="language-javascript">${JSON.stringify(obj)}`
-
-    $('.flex-outer').append(div2);
 }
 
 function displayMatches(e, dataSet) {
@@ -45,32 +24,8 @@ function displayMatches(e, dataSet) {
         return placesHTML;
     }
 
-    async function loadData() {
-        const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
-        const json - await data.json();
-        sessionStorage.setItem('restaurantData', JSON.stringify(json));
-    }
+const searchInput = document.querySelector('.search');
+const suggestions = document.querySelector('.suggestions');
 
-    async function mainThread() {
-        console.log('Firing main thread');
-        const manip = await loadData();
-        console.log('Check session storage', sessionStorage);
-        const restaurantData = JSON.parse(sessionStorage.getItem('restaurantData'));
-        manipulateAndBind(manip);
-        console.table(restaurantData);
-        restaurantData.forEach(item => {
-            const target = document.querySelector('.flex-outer');
-            const element = document.createElement('span');
-            element.innerText = `<span>${item.proper_hand_washing}</span>`;
-            target.append(element);
-        })
-    }
-
-    window.onload = mainThread;
-
-        const input
-        input.addEvent
-            const
-            const
-            target.
-    }
+searchInput.addEventListener('change', displayMatches);
+searchInput.addEventListener('keyup', displayMatches);
