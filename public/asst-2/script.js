@@ -1,27 +1,31 @@
-function findMatches(wordsToMatch, cities) {
-    return cities.filter(place => {
+const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
+
+const restaurants = [];
+fetch(endpoint)
+  .then(blob => blob.json())
+  .then(data => restaurants.push(...data));
+
+function findMatches(wordsToMatch, restaurants) {
+    return restaurants.filter(place => {
         const regex = new RegExp(wordsToMatch, 'gi');
-        return place.city.match(regex) || place.state.match(regex)
+        return place.city.match(regex) || place.zip.match(regex)
     });
 }
 
-function displayMatches(e, dataSet) {
-    console.log(e.target.value);
-    const matches = matchWord(e.target.value, dataSet);
-    let placesHTML = matches.map(
-        (place) => `
+function displayMatches() {
+    const matchArray = findMatches(this.value, restaurants);
+    const html = matchArray.map(place => {
+        const regex = new RegExp(this.value, 'gi');
+        const cityName = place.city.replace(regex, `<span class="h1">${this.value}</span>`);
+        const zipcode = place.zip.replace(regex, `<span class="h1">${this.value}</span>`);
+        return `
         <li>
-            <span class="name">${place.name}</span><br>
-            <span class="category">${place.category}</span>
-            <address>${place.address_line_1}<br>
-            ${place.city}<br>
-            ${place.zip}<address>
-            </li>
-            `);
-        if (e.target.value.length == 0) {
-            placesHTML = [];
-        }
-        return placesHTML;
+            <span class="name">${cityName}, ${zipcode}</span><br>
+            <span class="population">${(place.population)}</span>
+        </li>
+        `;
+    }).join('');
+    suggestions.innerHTML = html;
     }
 
 const searchInput = document.querySelector('.search');
