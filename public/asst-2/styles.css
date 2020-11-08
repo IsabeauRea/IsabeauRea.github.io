@@ -8,11 +8,13 @@ body {
   
 .search-form {
     max-width: 600px;
+    text-transform: uppercase;
 }
 
 .search {
     margin-bottom: 10;
     min-width: 600;
+    text-transform: uppercase;
 }
 
 .suggestions {
