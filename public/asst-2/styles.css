@@ -55,6 +55,7 @@ h1 {
 .name {
     font-style: normal;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .suggestions li:nth-child() {
